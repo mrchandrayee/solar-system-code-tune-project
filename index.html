@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080e24">
+  <title>Solar System Full Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div class="eyebrow">ASTRONOMY · EXPLORE OUR NEIGHBOURHOOD</div>
+      <h1>Solar System <span>Full Information</span></h1>
+      <p>Select a planet to explore its facts and orbital details.</p>
+    </header>
+
+    <section class="solar-card">
+      <div class="system-wrap">
+        <div class="solar-system" id="solarSystem" aria-label="Solar system diagram">
+          <div class="orbit o1"><button class="planet mercury" data-planet="mercury" aria-label="Mercury"></button></div>
+          <div class="orbit o2"><button class="planet venus" data-planet="venus" aria-label="Venus"></button></div>
+          <div class="orbit o3"><button class="planet earth" data-planet="earth" aria-label="Earth"></button></div>
+          <div class="orbit o4"><button class="planet mars" data-planet="mars" aria-label="Mars"></button></div>
+          <div class="orbit o5"><button class="planet jupiter" data-planet="jupiter" aria-label="Jupiter"></button></div>
+          <div class="orbit o6"><button class="planet saturn" data-planet="saturn" aria-label="Saturn"><i></i></button></div>
+          <div class="orbit o7"><button class="planet uranus" data-planet="uranus" aria-label="Uranus"></button></div>
+          <div class="orbit o8"><button class="planet neptune" data-planet="neptune" aria-label="Neptune"></button></div>
+          <button class="sun" data-planet="sun" aria-label="Sun"></button>
+          <div class="stars"></div>
+        </div>
+        <div class="planet-list" aria-label="Planet selector">
+          <button data-select="sun"><i class="sun-mark"></i>Sun</button>
+          <button data-select="mercury"><i class="mercury-mark"></i>Mercury</button>
+          <button data-select="venus"><i class="venus-mark"></i>Venus</button>
+          <button data-select="earth" class="selected"><i class="earth-mark"></i>Earth</button>
+          <button data-select="mars"><i class="mars-mark"></i>Mars</button>
+          <button data-select="jupiter"><i class="jupiter-mark"></i>Jupiter</button>
+          <button data-select="saturn"><i class="saturn-mark"></i>Saturn</button>
+          <button data-select="uranus"><i class="uranus-mark"></i>Uranus</button>
+          <button data-select="neptune"><i class="neptune-mark"></i>Neptune</button>
+        </div>
+      </div>
+
+      <article class="details" aria-live="polite">
+        <div class="details-top"><span class="label">PLANET PROFILE</span><span class="index" id="planetIndex">03 / 09</span></div>
+        <h2 id="planetName">Earth</h2>
+        <p class="description" id="planetDescription">Our home planet and the only known world to support life.</p>
+        <div class="facts">
+          <div><span>CLASSIFICATION</span><strong id="type">Terrestrial planet</strong></div>
+          <div><span>DIAMETER</span><strong id="diameter">12,742 km</strong></div>
+          <div><span>DAY LENGTH</span><strong id="day">24 hours</strong></div>
+          <div><span>ORBITAL PERIOD</span><strong id="year">365.25 days</strong></div>
+          <div><span>KNOWN MOONS</span><strong id="moons">1</strong></div>
+          <div><span>FROM THE SUN</span><strong id="distance">149.6 million km</strong></div>
+        </div>
+        <div class="detail-footer"><span class="live-dot"></span> INTERACTIVE PLANET DATA</div>
+      </article>
+    </section>
+
+    <footer><span>THE SOLAR SYSTEM</span><span>PLANETARY SIZES AND ORBITS ARE NOT TO SCALE</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
